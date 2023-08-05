@@ -97,10 +97,10 @@
                 </executions>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.4.11</version>
+                <version>1.2.2</version>
                 <configuration>
                     <imageName>${project.artifactId}</imageName>
-                    <baseImage>java</baseImage>
+                    <baseImage>openjdk</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
                         <resource>
